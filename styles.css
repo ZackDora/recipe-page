@@ -1,0 +1,155 @@
+*, *::before, *::after {
+box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, p, li, figure, figcaption, blockquote, dl, dd {
+margin: 0;
+}
+
+img {
+max-width: 100%;
+display: block;
+border-radius: 10px;
+}
+
+body {
+    background-color: hsl(330, 100%, 98%);
+    font-family: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: hsl(30, 10%, 34%);
+}
+
+h2 {
+    font-family: 'Young Serif', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 1rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid hsl(30, 18%, 87%);
+    margin: 2rem 0;
+}
+
+
+.recipe-all {
+    max-width: 70%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+
+
+/* HEADER */
+.recipe-name {
+    font-family: 'Young Serif', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.recipe-introduction {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* MAIN */
+/*preparation time */
+.preparation-time-section {
+    background-color: hsl(330, 100%, 98%);
+    padding: 1rem;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.preparation-time-title {
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 1rem;
+}
+
+.preparation-time-list-highlighted {
+    color: hsl(30, 10%, 34%);
+    font-weight: 700;
+}
+
+.preparation-time-list {
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.75rem;
+}
+
+/* instructions */
+.instructions-list li::marker {
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
+
+.instructions-list li {
+    padding-left: 1rem;
+}
+
+.instructions-list-highlighted {
+    font-weight: 700;
+}
+
+/* table */
+table {
+    margin-top: 1rem;
+     width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 0.75rem 0;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.td-highlighted {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+
+/* footer */
+footer {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+    color: hsl(30, 10%, 34%);
+}
+
+footer a {
+    color: hsl(30, 10%, 34%);
+}
+
+footer a:hover, footer a:focus {
+    color:hsl(14, 45%, 36%);
+}
+
+@media (max-width: 400px) {
+    body {
+        background-color: transparent;
+    }
+
+    img {
+        border-radius: 0;
+    }
+
+    .recipe-all {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    main, header {
+        padding: 1.25rem;
+    }
+}
+
